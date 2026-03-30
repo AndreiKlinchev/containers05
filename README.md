@@ -108,12 +108,6 @@ RUN wget https://wordpress.org/latest.tar.gz -O /tmp/wordpress.tar.gz && \
 
 ---
 
-После исправления Dockerfile и пересборки образа контейнер был запущен:
-
-![Запущенный контейнер](sandbox:/mnt/data/Screenshot_17.png)
-
----
-
 Далее внутри контейнера была создана база данных и пользователь:
 
 ```bash
@@ -169,8 +163,6 @@ FLUSH PRIVILEGES;
 
 * все сервисы находятся в одном контейнере
 * нет разделения на отдельные сервисы (web и database)
-* WordPress скачивается при сборке
-* отсутствует docker-compose
 
 ---
 
